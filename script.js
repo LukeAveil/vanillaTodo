@@ -58,12 +58,16 @@ var todoList = {
   }
 };
 
-
 var handlers = {
   displayTodos: function() {
     todoList.displayTodos();
   },
   toggleAll: function() {
     todoList.toggleAll();
+  },
+  addTodo: function() {
+    var addTodoText = document.getElementById('addTodoText');
+    todoList.addTodo(addTodoText.value);
+    addTodoText.value = '';
   }
 };
